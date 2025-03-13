@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            background:linear-gradient(to right, #5ddcff, #a166ff, #f04dff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border: none;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            width: 30vw;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        .input-container{
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-container label{
+            font-size: 14px;
+        
+        }
+        .input-field{
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .forgot_password{
+            text-align: right;
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        .forgot_password a{
+            text-decoration: none;
+            color: #666;
+        }
+        .button{
+            background: linear-gradient(to right, #5ddcff, #a166ff, #f04dff);
+            text-align: center;
+            color: white;
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 15px;
+            font-size: 1rem;
+        }
+        .social{
+            margin: 20px 0;
+        }
+        .social p{
+            font-size: 14px;
+            margin-bottom: 10px;
+
+        }
+        .icons{
+            display: flex;
+            gap:10px;
+            cursor: pointer;
+        }
+        .signup{
+            font-size: 14px;
+            margin-top: 14px;
+        }
+        .signup a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #a166ff;
+        }
+        @media (max-width: 768px) {
+    .parent {
+        width: 80%;
+        padding: 30px;
+    }
+    .button {
+        font-size: 0.9rem;
+    }
+    .icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parent {
+        width: 90%;
+        padding: 25px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="parent">
+        <h1>Login</h1>
+        <div class="input-container">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="input-field" placeholder="Type your username">
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="input-field" placeholder="Type your password">
+        </div>
+        <div class="forgot_password">
+            <a href="#">Forgot Password</a>
+        </div>
+        <button class="button">Login</button>
+        <div class="social">
+            <p>Or Sign Up Using</p>
+            <div class="icons">
+                <img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook">
+                <img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter">
+                <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+            </div>
+        </div>
+        <div class="signup">
+            Or Sign Up using <a href="#">Sign Up</a>
+        </div>
+
+   </div>   
+</body>
+</html>
